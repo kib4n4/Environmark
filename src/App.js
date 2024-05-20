@@ -6,27 +6,27 @@ import Ourservices from "./pages/Ourservices";
 import Portfolio from "./pages/Portfolio";
 import ContactUs from "./pages/ContactUs";
 import DisplayArea from "./components/DisplayArea";
+import { Outlet, NavLink } from "react-router-dom";
+
 function App() {
   return (
     <>
-      <nav className="title">
-        <h1 id="title">ENVIRONMARK Ltd</h1>
+      <header>
+        <nav className="title">
+          <h1 id="title">ENVIRONMARK Ltd</h1>
           <p>Innovative. Sustainable. Environmental solutions</p>
-          <button className="contactusbttn"><ContactUs/></button>
-          <button className="portfoliobttn"><Portfolio/></button>
-          <button className="ourservicesbttn"> <Ourservices/></button>
-          <button className="aboutbttn"> <About /></button> 
-          <button className="homebttn"><Home /></button> 
-          
-       
-        <hr />
-      </nav>
+          <div className="nav-links">
+            <NavLink to="/contact" className="contactusbttn">Contact Us</NavLink>
+            <NavLink to="/portfolio" className="portfoliobttn">Portfolio</NavLink>
+            <NavLink to="/ourservices" className="ourservicesbttn">Our Services</NavLink>
+            <NavLink to="/about" className="aboutbttn">About</NavLink>
+            <NavLink to="/" className="homebttn">Home</NavLink>
+          </div>
+          <hr />
+        </nav>
+      </header>
       <div>
-      <DisplayArea/>
-<div>
-
-</div>
-   
+        <Outlet />
       </div>
     </>
   );
