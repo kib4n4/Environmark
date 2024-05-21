@@ -1,17 +1,74 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import App from "./App";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Ourservices from "./pages/Ourservices";
+import Portfolio from "./pages/Portfolio";
+import ContactUs from "./pages/ContactUs";
+import DisplayArea from "./components/DisplayArea";
+import ErrorBoundary from "./components/ErrorBoundary";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
+    ),
+  },
+  {
+    path: "/home",
+    element: (
+      <ErrorBoundary>
+        <Home />
+      </ErrorBoundary>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <ErrorBoundary>
+        <About />
+      </ErrorBoundary>
+    ),
+  },
+  {
+    path: "/ourservices",
+    element: (
+      <ErrorBoundary>
+        <Ourservices />
+      </ErrorBoundary>
+    ),
+  },
+  {
+    path: "/portfolio",
+    element: (
+      <ErrorBoundary>
+        <Portfolio />
+      </ErrorBoundary>
+    ),
+  },
+  {
+    path: "/contactus",
+    element: (
+      <ErrorBoundary>
+        <ContactUs />
+      </ErrorBoundary>
+    ),
+  },
+  {
+    path: "/displayarea",
+    element: (
+      <ErrorBoundary>
+        <DisplayArea />
+      </ErrorBoundary>
+    ),
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

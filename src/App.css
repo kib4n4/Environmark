@@ -1,96 +1,67 @@
-.title{
-  background-color: #71f750;
-  text-align: center;
-}
-#title{
-  font-size: 40px;
-  font-weight: bold;
-  margin-top: 20px;
-}
-#home{
-  margin-top: 0px;
- margin-right: 25px;
-  float:right ;
-}
-#about{
-  margin-top: 0px;
-  margin-right: 15px;
-  float: right;
-  position: justify;
-}
-.displayArea{
-  height: 150px;
-  width: 150px;
-  margin-left: 300px;
-}
-.homebttn, .aboutbttn, .ourservicesbttn, .portfoliobttn, .contactusbttn {
-  margin-top: 20px;
-  float: right;
-  text-align: center;
-  background-color: #001f3f; /* Navy blue background */
-  color: white; /* White text color */
-  border: 1px solid #00264d;
-  border-radius: 5px 5px 0 0;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  position: relative;
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.homebttn:before, .aboutbttn:before, .ourservicesbttn:before, .portfoliobttn:before, .contactusbttn:before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background-color: #001f3f; /* Navy blue tab color */
-  border-top: 1px solid #00264d;
-  border-left: 1px solid #00264d;
-  border-right: 1px solid #00264d;
-  border-radius: 5px 5px 0 0;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.homebttn:hover, .aboutbttn:hover, .ourservicesbttn:hover, .portfoliobttn:hover, .contactusbttn:hover {
-  background-color: #00264d; /* Darker navy blue on hover */
+/* Header Styles */
+.header {
+  background-color: #39f720;
+  color: #f5f7f5;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ccc;
 }
 
 .active {
-  background-color: #00b8e6 !important; /* Turquoise color for active page */
-  color: white !important; /* White text for active page */
+  font-weight: bold;
 }
 
-.active:before {
-  background-color: #00b8e6 !important; /* Turquoise color for active page tab */
-  border-top-color: #00b8e6 !important; /* Turquoise color for active page tab border */
-  border-left-color: #00b8e6 !important; /* Turquoise color for active page tab border */
-  border-right-color: #00b8e6 !important; /* Turquoise color for active page tab border */
-}
-.image8 {
-  width: 300px;
-  height: 200px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
-}
-
-.image8:hover {
-  transform: scale(1.05);
-}
-.background-container {
-  border-radius: 50px;
-  background-position: center;
-  height: auto;
-  width: 550px;
-  margin-left: 20px;
-}
-section{
-  flex: 1;
+/* Main Content Styles */
+.main {
+  flex-grow: 1;
   padding: 2rem;
- text-align:justify;
- font-style: sans-serif,Arial,sans-serif;
- font-size: 20px;
-  margin-left: 50%;
-  margin-Right: 15px;
-  margin-top: 5px;
 }
