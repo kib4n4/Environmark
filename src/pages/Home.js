@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Card from "../components/Card";
+import ImageLogo from "../components/image";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       </header>
       <main>
       <Card/>
+      <ImageLogo/>
       </main>
     </>
   );
