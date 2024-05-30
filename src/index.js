@@ -9,6 +9,7 @@ import Portfolio from "./pages/Portfolio";
 import ContactUs from "./pages/ContactUs";
 import DisplayArea from "./components/DisplayArea";
 import ErrorBoundary from "./components/ErrorBoundary";
+import Footer from "./components/footer";
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,18 @@ const router = createBrowserRouter([
       </ErrorBoundary>
     ),
   },
+  {
+    path: "/footer",
+    element: (
+      <ErrorBoundary>
+        <Footer />
+      </ErrorBoundary>
+    ),
+  },
+
+
+
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

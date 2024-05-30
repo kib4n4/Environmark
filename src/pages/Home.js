@@ -10,8 +10,9 @@ function Home() {
         <NavBar />
       </header>
       <main>
-      <Card/>
-      <ImageLogo/>
+        <div>
+          <Card imageUrl={ImageLogo} />
+        </div>
       </main>
     </>
   );

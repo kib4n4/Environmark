@@ -1,7 +1,8 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Card from "../components/Card";
-import './about.css'
+import './about.css' 
+
 
 const cardData = [
   {
@@ -29,7 +30,11 @@ function About() {
             />
           </div>
         </section>
+        <div>
+                
         
+        </div>
+      
       </main>
     </>
   );

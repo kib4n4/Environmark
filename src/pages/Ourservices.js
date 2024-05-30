@@ -1,7 +1,8 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Card from "../components/Card";
- function Ourservices(){
+
+function Ourservices(){
      return(
      <>
      <header>
@@ -12,6 +13,7 @@ import Card from "../components/Card";
     {/*display cards that will contain information about the company services */}
 <Card/>
      </main>
+     
      </>); 
  }
   export default Ourservices;

@@ -5,7 +5,7 @@ function NavBar() {
     <header className="header">
       <nav className="nav">
         <h1 className="title">ENVIRONMARK Ltd</h1>
-        <p className="subtitle">Innovative. Sustainable. Environmental solutions</p>
+             <p className="subtitle">Innovative. Sustainable. Environmental solutions</p>
         <div className="nav-links">
           {/* Use NavLink components to create the navigation links */}
           <NavLink to="/" className="nav-link home-link">
