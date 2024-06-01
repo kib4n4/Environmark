@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Card from "../components/Card";
-import './about.css' 
+import './pages.css' 
 import Footer from "../components/footer";
 
 
@@ -30,9 +30,9 @@ function portfolio() {
         <NavBar />
       </header>
       <main>
-        <section className="about-section">
+        <section className="section">
        
-          <div className="about-content">
+          <div className="content">
             <Card
               imageUrl={cardData[0].imageUrl}
               cardText={cardData[0].cardText}

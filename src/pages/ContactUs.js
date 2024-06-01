@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Card from "../components/Card";
-import './about.css' 
+import './pages.css' 
 import Footer from "../components/footer";
 
 
@@ -24,9 +24,9 @@ function ContactUs() {
         <NavBar />
       </header>
       <main>
-        <section className="contactUs-section">
+        <section className="section">
        
-          <div className="contactUs-content">
+          <div className="content">
             <Card
               imageUrl={cardData[0].imageUrl}
               cardText={cardData[0].cardText}

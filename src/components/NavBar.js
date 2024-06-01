@@ -1,9 +1,16 @@
 import { NavLink } from "react-router-dom";
+import './navBar.css';
 
 function NavBar() {
   return (
+  <>
+   
     <header className="header">
+       <div>
+          <img  className="logo"src="./Images/logo1.png" alt="logo"/>
+        </div>
       <nav className="nav">
+        
         <h1 className="title">ENVIRONMARK Ltd</h1>
              <p className="subtitle">Innovative. Sustainable. Environmental solutions</p>
         <div className="nav-links">
@@ -24,8 +31,11 @@ function NavBar() {
             Contact Us
           </NavLink>
         </div>
+       
       </nav>
     </header>
+  </>
+  
   );
 }
 

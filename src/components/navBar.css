@@ -1,0 +1,70 @@
+/* navBar.css */
+
+.header {
+    margin-top: 8px !important;
+    background-color: #1c9e0b;
+    color: #f5f7f5;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .logo {
+    width: 120px;
+    height: auto;
+    margin-left:10px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+  }
+  
+  .nav-link:hover {
+    color: #ccc;
+    background-color: #10730a;
+  }
+  
+  .active {
+    font-weight: bold;
+    background-color: #10730a;
+  }
+  

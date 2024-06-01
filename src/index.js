@@ -7,7 +7,6 @@ import About from "./pages/About";
 import Ourservices from "./pages/Ourservices";
 import Portfolio from "./pages/Portfolio";
 import ContactUs from "./pages/ContactUs";
-import DisplayArea from "./components/DisplayArea";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Footer from "./components/footer";
 
@@ -60,14 +59,7 @@ const router = createBrowserRouter([
       </ErrorBoundary>
     ),
   },
-  {
-    path: "/displayarea",
-    element: (
-      <ErrorBoundary>
-        <DisplayArea />
-      </ErrorBoundary>
-    ),
-  },
+ 
   {
     path: "/footer",
     element: (
