@@ -8,10 +8,11 @@
   max-width: 50%;
   max-height: auto;
   margin: 3rem;
+
 }
 
 .card-image {
-  width: 100%;
+  width: 85%;
   height: 200px;
   object-fit: cover;
 }

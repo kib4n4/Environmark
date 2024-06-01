@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <h1 className="footer-title">ENVIRONMARK Ltd</h1>
+                <h1 className="footer-title">Environmark</h1>
                 <NavLink className="footer-home" to="/">Home</NavLink>
                 <NavLink  className="footer-about"to="/about">About</NavLink>
                 <NavLink  className="footer-contact"to="/contact">Contact</NavLink>

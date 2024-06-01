@@ -15,9 +15,14 @@ body {
 
 /* Header Styles */
 .header {
+  margin-top: 8px !important;
   background-color: #1c9e0b;
   color: #f5f7f5;
+  text-align: center;
   padding: 1rem;
+  border-radius: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .nav {

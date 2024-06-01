@@ -6,12 +6,15 @@
     padding: 40px 0;
     text-align: center;
     max-height: 20px;
-     border-radius: 8px;
+     border-radius: 12px;
+     margin-left: 10px;
+     margin-right: 10px;
+     margin-bottom: 8px;
   }
   .footer-title {
-    font-size: 2rem;
+    font-size: 25px !important;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-top: 0px;
     text-align: center;
   }
   
@@ -23,10 +26,11 @@
   
   .footer-content {
     max-width: 1200px;
-    margin: 0 auto;
+    margin:0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
   }
   
   .footer-links {
@@ -56,4 +60,23 @@
     color: #aaa;
     margin-top: 20px;
   }
-  
+  .footer-home,
+.footer-about,
+.footer-contact,
+.footer-ourservices,
+.footer-portfolio {
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #f3d6bb;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-home:hover,
+.footer-about:hover,
+.footer-contact:hover,
+.footer-ourservices:hover,
+.footer-portfolio:hover {
+  color: #666;
+}
