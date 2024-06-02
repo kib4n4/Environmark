@@ -16,14 +16,15 @@
 
 /* Card Styles */
 .card {
-  display: flex;
+  display: justify;
   flex-direction: column;
   background-color: #4a98f1;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
   border-radius: 12px;
   overflow: hidden;
   transition: box-shadow 0.3s ease-in-out;
-  width: 85%;
+  width: 35%;
+  margin:0px ;
 }
 
 .card:hover {
@@ -78,4 +79,22 @@
   font-size: 15px;
   line-height: 1.6;
   color: #555;
+}
+.ourservices-paragraph {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  background-color: #48be62;
+  border-radius: 5px;
+  padding: 1rem;
+  position: absolute;
+  top: 60%; /* 10% from the top */
+  right: 30px; /* 20 pixels from the right */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 600px; /* Set a width to limit the size */
+  text-align: left; /* Align the text to the left */
+}
+
+.ourservices-paragraph:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }

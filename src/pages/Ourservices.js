@@ -44,14 +44,35 @@ function Ourservices() {
             />
           </div>
         </section>
-        <div>
-           
-                
-        <footer>
-            <Footer/>
-        </footer>
+    
+        <div className="ourservices-paragraph">
+       
+            <h2 className="ourservices-paragraph">
+            Our services
+            </h2>
+<h4 className="ourservices-paragraph">
+  We offer the following consultancy services to our clients in the various sectors of development;
+  
+  </h4>
+  <ul className="ourservices-paragraph">
+         <li>Environmental assessment and management</li>
+         <li> Social and Environmental Impact Assessment (ESIA).</li>
+         <li> Strategic Environmental Assessment (SEA).</li>
+         <li> Monitoring and Supervision of Construction sites</li>
+         <li> Environmental Audit (EA)</li>
+         <li> Resettlement Action Plans (RAPs)</li>
+         <li> Environmental and Social Management Frameworks (ESMF)</li>
+         <li> Development of Environmental policies and plans</li>
+         <li> Development of Waste Management Plans.</li>
+  </ul>
+
+         
         </div>
-      
+        <div> 
+           <footer>
+             <Footer/>
+           </footer>
+        </div>
       </main>
     </>
   );

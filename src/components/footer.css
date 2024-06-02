@@ -12,8 +12,8 @@
   position: sticky;
   bottom: 0;
   z-index: 1000;
-  background: rgb(29,168,219);
-background: linear-gradient(183deg, rgba(29,168,219,1) 36%, rgba(29,219,168,1) 45%, rgba(219,124,29,1) 100%);
+  background: rgb(129,73,16);
+background: linear-gradient(0deg, rgba(129,73,16,1) 71%, rgba(129,95,16,1) 73%, rgba(90,158,25,1) 73%);
 }
 
 .footer-content {
