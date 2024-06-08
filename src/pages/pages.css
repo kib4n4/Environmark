@@ -1,9 +1,9 @@
 /* pages.css */
 
-/* Section Styles */
+/* General Styles */
 .section {
   padding: 4rem 2rem;
-  background-color: #f4f4f4;
+  background-color: #0ddacf;
 }
 
 .content {
@@ -16,15 +16,15 @@
 
 /* Card Styles */
 .card {
-  display: justify;
+  display: flex;
   flex-direction: column;
   background-color: #4a98f1;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
   border-radius: 12px;
   overflow: hidden;
   transition: box-shadow 0.3s ease-in-out;
-  width: 35%;
-  margin:0px ;
+  /* width: 35%; */
+  margin: 0;
 }
 
 .card:hover {
@@ -64,6 +64,7 @@
   line-height: 1.5;
 }
 
+/* About Card Styles */
 .about-card {
   margin-top: 20px;
 }
@@ -80,6 +81,8 @@
   line-height: 1.6;
   color: #555;
 }
+
+/* Our Services Styles */
 .ourservices-paragraph {
   font-size: 16px;
   line-height: 1.8;
@@ -88,13 +91,49 @@
   border-radius: 5px;
   padding: 1rem;
   position: absolute;
-  top: 60%; /* 10% from the top */
-  right: 30px; /* 20 pixels from the right */
+  top: 60%;
+  right: 30px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 600px; /* Set a width to limit the size */
-  text-align: left; /* Align the text to the left */
+  width: 600px;
+  text-align: left;
 }
 
 .ourservices-paragraph:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.text-center{
+  text-align: center;
+}
+
+.fw-bold{
+  font-weight: bold;
+}
+
+.image-card{
+  border-radius: 3%;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.row{
+  display: flex;
+  gap: 1rem;
+  padding: 10px;
+  margin: 0;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.col{
+  display: inline;
+
+}
+
+
+.icon{
+  font-size: larger;
+  margin-inline: 20px;
 }

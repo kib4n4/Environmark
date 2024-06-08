@@ -4,7 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Ourservices from "./pages/Ourservices";
+import Ourservices from "./pages/ourservices";
 import Portfolio from "./pages/Portfolio";
 import ContactUs from "./pages/ContactUs";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/contactus",
+    path: "/contact",
     element: (
       <ErrorBoundary>
         <ContactUs />
