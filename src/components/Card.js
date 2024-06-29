@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 const Card = ({ imageUrl, description, cardText, cardTitle }) => {
   return (
     <div className="card">
@@ -10,7 +12,7 @@ const Card = ({ imageUrl, description, cardText, cardTitle }) => {
         <p className="card-description">{description}</p>
         <div className="about-card">
           <h3 className="about-card-title">{cardTitle}</h3>
-          <p className="card-text">{cardText}</p>
+          <p className="card-text" style={{backgroundColor:"greenyellow"}}>{cardText}</p>
         </div>
       </div>
     </div>

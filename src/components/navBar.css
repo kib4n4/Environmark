@@ -1,70 +1,66 @@
 /* navBar.css */
 
+/* Header styles */
 .header {
-    margin-top: 8px !important;
-    background-color: #1c9e0b;
-    color: #f5f7f5;
-    padding: 1.5rem 1rem;
-    border-radius: 12px;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-  }
-  
-  .logo {
-    width: 120px;
-    height: auto;
-    margin-left:10px;
-    float: left;
-    margin-right: 20px;
-    border-radius: 5px;
-  }
-  
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.2rem;
-  }
-  
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    padding: 0.6rem 1.2rem;
-    border-radius: 5px;
-  }
-  
-  .nav-link:hover {
-    color: #ccc;
-    background-color: #10730a;
-  }
-  
-  .active {
-    font-weight: bold;
-    background-color: #10730a;
-  }
-  
+  background-color: #69b83b;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+#logo {
+  height: 80px;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+
+}
+
+.moto {
+  font-size: 16px;
+  margin: 0;
+  align-content: center;
+}
+
+/* Navigation styles */
+.nav {
+  background-color: #f2f2f2;
+  padding: 10px 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #030e1a;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #e6e6e6;
+}
+
+.nav-link.active {
+  background-color: #042366;
+  color: #fff;
+}
+
+.home-link {
+  border-left: 1px solid #ccc;
+}
+
+.contact-link {
+  border-right: 1px solid #ccc;
+}

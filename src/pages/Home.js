@@ -27,7 +27,7 @@ function Home() {
        
           <div className="content">
             <Card
-              imageUrl={cardData[0].imageUrl}
+              
               cardText={cardData[0].cardText}
               cardTitle={cardData[0].cardTitle}
             />

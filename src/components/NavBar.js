@@ -3,16 +3,13 @@ import './navBar.css';
 
 function NavBar() {
   return (
-  <>
-   
-    <header className="header">
-       <div>
-          <img  className="logo"src="./Images/logo1.png" alt="logo"/>
-        </div>
+    <>
+      <header className="header">
+        <img id="logo" src="./Images/logo1.png" alt="logo" />
+        <h1 className="header-title">ENVIRONMARK Ltd</h1>
+        <p className="moto">Innovative. Sustainable. Environmental solutions</p>
+      </header>
       <nav className="nav">
-        
-        <h1 className="title">ENVIRONMARK Ltd</h1>
-             <p className="subtitle">Innovative. Sustainable. Environmental solutions</p>
         <div className="nav-links">
           {/* Use NavLink components to create the navigation links */}
           <NavLink to="/" className="nav-link home-link">
@@ -31,11 +28,8 @@ function NavBar() {
             Contact Us
           </NavLink>
         </div>
-       
       </nav>
-    </header>
-  </>
-  
+    </>
   );
 }
 

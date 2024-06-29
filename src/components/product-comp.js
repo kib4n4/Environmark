@@ -26,20 +26,54 @@ export default function ProductComp() {
 
   return (
     <div>
-      <h3 className="text-center">Projects</h3>
-      <hr />
+      <div className="about-us-text">
       <div className="row">
         <div className="col">
           <Imagecard description={""} imageUrl={project?.img} />
         </div>
         <div className="col">
-          <div>{project?.text}</div>
+        <div>{project?.text}</div>
         </div>
       </div>
+        <h3 className="text-center"> About us</h3>
+        <p className="paragraph-center">
+        Environmark Limited is a private limited consulting company incorporated in Kenya in
+December 2017 under the Companies Act, 2015. We offer consultancy services in environmental
+management, environmental impact and audit assessment, occupational safety and health and
+climate change. Our staff are highly qualified, experienced and client focused in delivering
+innovative, efficient and cost effective solutions. We partner and work together with other like-
+minded firms in promoting the sustainable development agenda.
+        </p>
+      </div>
+      <hr />
+      <h3 className="text-center">Projects</h3>
+      <hr />
+     <div>
+       <Card/>
+     </div>
       <div className="text-center">
-      {index > 0 && <button className="icon fw-bold" onClick={() => {setIndex(index-1)}}> {'<'} </button>}
-      {index <= projects.length && <button  className="icon fw-bold"  onClick={() => {setIndex(index+1)}}> {'>'} </button>}
-        
+        {index > 0 && (
+          <button
+            className="icon fw-bold"
+            onClick={() => {
+              setIndex(index - 1);
+            }}
+          >
+            {" "}
+            {"<"}{" "}
+          </button>
+        )}
+        {index <= projects.length && (
+          <button
+            className="icon fw-bold"
+            onClick={() => {
+              setIndex(index + 1);
+            }}
+          >
+            {" "}
+            {">"}{" "}
+          </button>
+        )}
       </div>
     </div>
   );
