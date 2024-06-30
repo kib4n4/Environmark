@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import Card from "../components/Card";
 import './pages.css' 
 import Footer from "../components/footer";
+import "./About.css";
 
 const cardData = [
   {

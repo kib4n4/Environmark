@@ -8,7 +8,7 @@ import Footer from "../components/footer";
 const cardData = [
   {
     imageUrl:
-      "https://www.shutterstock.com/image-vector/environmental-impact-assessment-effect-analysis-260nw-2217260099.jpg",
+      "./Images/logo2.png",
    
     cardText:
           <div>
@@ -54,6 +54,9 @@ function Ourservices() {
   We offer the following consultancy services to our clients in the various sectors of development;
   
   </h4>
+  <p>
+  We offer the following consultancy services to our clients in the various sectors of development;
+  </p>
   <ul className="ourservices-paragraph">
          <li>Environmental assessment and management</li>
          <li> Social and Environmental Impact Assessment (ESIA).</li>
@@ -64,6 +67,7 @@ function Ourservices() {
          <li> Environmental and Social Management Frameworks (ESMF)</li>
          <li> Development of Environmental policies and plans</li>
          <li> Development of Waste Management Plans.</li>
+         <li> Formulation of Chance Find procedures for construction sites</li>
   </ul>
 
          
