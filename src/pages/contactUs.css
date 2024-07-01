@@ -95,3 +95,20 @@ body {
     margin: 0;
   }
   
+  .in{
+    border-radius: 130px;
+    width: 30px;
+}
+.phone{
+    width: 50px;
+    margin-left: -10px;
+}
+.mail{
+    width: 50px;
+    margin-left: -10px;
+}
+.app{
+    width: 35px;
+    margin-left: 0px;
+    border-radius: 130px;
+}
