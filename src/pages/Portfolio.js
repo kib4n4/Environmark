@@ -2,13 +2,11 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import Card from "../components/Card";
 import Footer from "../components/footer";
-
+import ProductComp from "../components/product-comp";
 
 const cardData = [
   {
-    imageUrl:
-      "https://www.shutterstock.com/image-vector/environmental-impact-assessment-effect-analysis-260nw-2217260099.jpg",
-   
+    
     cardText:""
    
   },
@@ -25,9 +23,12 @@ function portfolio() {
        
           <div >
             <Card
-              imageUrl={cardData[0].imageUrl}
+             
               cardText={cardData[0].cardText}
             />
+          </div>
+          <div>
+            <ProductComp/>
           </div>
         </section>
         {/*insert company portifolio here */}
