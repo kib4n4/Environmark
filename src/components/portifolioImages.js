@@ -8,6 +8,7 @@ import Image6 from "../assets/images/image6.jpeg";
 import Image7 from "../assets/images/image7.jpeg";
 import Image8 from "../assets/images/image8.jpeg";
 import Card, { Imagecard } from "./Card";
+import "./portifolioImages.css";
 
 const projects = [
   { img: Image1, text: "Hello Vietname asjd sdjkajksdn " },

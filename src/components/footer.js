@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import { NavLink } from "react-router-dom";
+import { SocialIcon } from 'react-social-icons';
 
 function Footer() {
   return (
@@ -24,25 +25,22 @@ function Footer() {
             <NavLink to="/portfolio">Portfolio</NavLink>
           </li>
         </ul>
-        <div className="footer-social">
-          <a href="https://linkedin.com/company/environmark">
-            {/* Environmark linkedin profile */}
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="https://facebook.com/environmark">
-            {/* Environmark Facebook profile */}
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a href="mailto:info@environmark.com">
-            {/* Environmark gmail A/c */}
-            <i className="fas fa-envelope"></i>
-          </a>
-          <a href="https://wa.me/123456789">
-            {/* Environmark whatsapp contact profile */}
-            <i className="fab fa-whatsapp"></i>
-          </a>
-        </div>
+        
         <p className="footer-copyright">&copy;2021 Environmark. All rights reserved.</p>
+        
+         
+            
+            <SocialIcon url="https://linkedin.com/in/couetilc" className="socials" />
+           
+            <SocialIcon network="email" bgColor="" className="socials"/>
+              
+              <SocialIcon network="whatsapp" bgColor="" className="socials" />
+              
+              <SocialIcon network="x" bgColor="black" className="socials"/>
+             
+          
+     
+       
       </div>
       <div>
         <p>

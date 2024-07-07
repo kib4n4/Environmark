@@ -4,15 +4,25 @@ import Card from "../components/Card";
 import './pages.css' 
 import Footer from "../components/footer";
 import "./contactUs.css"
-
+import { SocialIcon } from 'react-social-icons';
 
 const cardData = [
   {
     imageUrl:
     "./Images/logo2.png",
     cardText:
-      "Environmark Limited is a private limited consulting company incorporated in Kenya in December 2017 under the Companies Act, 2015. We offer consultancy services in environmental management, environmental impact and audit assessment, occupational safety and health and climate change. Our staff are highly qualified, experienced and client focused in delivering innovative, efficient and cost effective solutions. We partner and work together with other like-minded firms in promoting the sustainable development agenda.",
-    
+      <div>
+       <SocialIcon url="https://linkedin.com/in/couetilc" className="socials" />
+           <br/><hr/>
+           <SocialIcon network="email" bgColor="" className="socials"/>
+            <br/><hr/>
+             
+             <SocialIcon network="whatsapp" bgColor="" className="socials" />
+             <br/><hr/>
+             <SocialIcon network="x" bgColor="black" className="socials"/>
+            
+         
+      </div>,
     cardTitle:"CONTACT US"
     },
 ];
