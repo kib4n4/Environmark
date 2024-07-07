@@ -8,7 +8,7 @@ import Image5 from "../assets/images/image5.jpeg";
 import Image6 from "../assets/images/image6.jpeg";
 import Image7 from "../assets/images/image7.jpeg";
 import Image8 from "../assets/images/image8.jpeg";
-import Card, { Imagecard } from "./Card";
+import Card from "./Card";
 import "./product-comp.css"; // Add a new CSS file for component-specific styles
 
 const projects = [
@@ -41,7 +41,7 @@ export default function ProductComp() {
   return (
     <div className="product-comp">
       <div className="main-display">
-        <Imagecard description={project.text} imageUrl={project.img} />
+        <Card description={project.text} imageUrl={project.img} />
         <div className="navigation-buttons">
           <button className="btn btn-primary" onClick={handlePrevious} disabled={index === 0}>
             Previous
@@ -51,16 +51,7 @@ export default function ProductComp() {
           </button>
         </div>
       </div>
-      <div className="projects-section">
-        <h2 className="text-center">Our Projects</h2>
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-          {projects.map((project, i) => (
-            <div className="col" key={i}>
-              <Card image={project.img} text={project.text} />
-            </div>
-          ))}
-        </div>
-      </div>
+     
     </div>
   );
 }

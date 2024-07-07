@@ -1,13 +1,26 @@
 /* navBar.css */
 
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 /* Header styles */
 .header {
   background-color: #69b83b;
   color: #fff;
   padding: 20px;
   display: flex;
-  justify-content:space-between;
-  align-items:normal;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 #logo {
@@ -15,17 +28,19 @@
   border-radius: 4px;
 }
 
+.header-text {
+  text-align: right;
+}
+
 .header-title {
   font-size: 24px;
   font-weight: bold;
   margin: 0;
-
 }
 
 .moto {
   font-size: 16px;
   margin: 0;
-  align-content: center;
 }
 
 /* Navigation styles */
@@ -40,6 +55,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -64,4 +80,33 @@
 
 .contact-link {
   border-right: 1px solid #ccc;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .nav-link:first-child {
+    border-top: none;
+  }
 }

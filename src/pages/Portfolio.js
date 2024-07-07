@@ -1,16 +1,10 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-import Card from "../components/Card";
+
 import Footer from "../components/footer";
 import ProductComp from "../components/product-comp";
 
-const cardData = [
-  {
-    
-    cardText:""
-   
-  },
-];
+
 
 function portfolio() {
   return (
@@ -21,12 +15,7 @@ function portfolio() {
       <main>
         <section>
        
-          <div >
-            <Card
-             
-              cardText={cardData[0].cardText}
-            />
-          </div>
+          
           <div>
             <ProductComp/>
           </div>
