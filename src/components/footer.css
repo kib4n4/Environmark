@@ -1,6 +1,6 @@
 /* Footer.css */
 .footer {
-  background-color: #0b9e97;
+  
   color: #f5f7f5;
   padding: 2rem 1rem;
   text-align: center;
@@ -13,7 +13,7 @@
   bottom: 0;
   z-index: 1000;
   background: rgb(129,73,16);
-background: linear-gradient(0deg, rgba(129,73,16,1) 71%, rgba(129,95,16,1) 73%, rgba(90,158,25,1) 73%);
+background: linear-gradient(0deg, rgba(129,73,16,1) 71%, rgb(224, 159, 7) 73%, rgb(25, 131, 158) 73%);
 }
 
 .footer-content {
