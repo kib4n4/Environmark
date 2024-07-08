@@ -1,7 +1,8 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Card from "../components/Card";
-import './pages.css' 
+import './pages.css' ;
+
 
 
 const cardData = [
@@ -31,6 +32,9 @@ function Home() {
               cardText={cardData[0].cardText}
               cardTitle={cardData[0].cardTitle}
             />
+            <div>
+            
+            </div>
           </div>
         </section>
         <div>
