@@ -6,20 +6,18 @@ import Image3 from "../assets/images/image3.jpeg";
 import Image4 from "../assets/images/image4.jpeg";
 import Image5 from "../assets/images/image5.jpeg";
 import Image6 from "../assets/images/image6.jpeg";
-import Image7 from "../assets/images/image7.jpeg";
-import Image8 from "../assets/images/image8.jpeg";
+import Image7 from "../assets/images/image8.jpeg";
 import Card from "./Card";
 import "./product-comp.css"; // Add a new CSS file for component-specific styles
 
 const projects = [
-  { img: Image1, text: "Project 1: Hello Vietnam" },
-  { img: Image2, text: "Project 2: Exploring the Countryside" },
-  { img: Image3, text: "Project 3: Discovering Ancient Ruins" },
-  { img: Image4, text: "Project 4: Experiencing the City Life" },
-  { img: Image5, text: "Project 5: Tasting the Local Cuisine" },
-  { img: Image6, text: "Project 6: Hiking through the Mountains" },
-  { img: Image7, text: "Project 7: Visiting Cultural Landmarks" },
-  { img: Image8, text: "Project 8: Discovering Hidden Gems" },
+  { img: Image1, text: "Project 1: Wildlife Conservation" },
+  { img: Image2, text: "Project 2: Flower farms Environmental Audit" },
+  { img: Image3, text: "Project 3: Hot water solar Installation" },
+  { img: Image4, text: "Project 4: Industrial Plants Environmental, Health and Safety Audits" },
+  { img: Image5, text: "Project 5: Environmental Assessment and Audits for Transport Infrastructure" },
+  { img: Image6, text: "Project 6: Environmental, Health and Safety Assessment for Sewerage Infrastructure" },
+  { img: Image7, text: "Project 8: Public and Stakeholder Consultations" },
 ];
 
 export default function ProductComp() {
